@@ -1,11 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import Navigation from "../aula04/Navigate";
 
-export default function App() {
+export default function Pagina2() {
   return (
     <View style={styles.container}>
-      <Navigation/>
+      <Text>Estou na pagina 2</Text>
       <StatusBar style="auto" />
     </View>
   );
