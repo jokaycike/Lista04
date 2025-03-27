@@ -4,10 +4,7 @@ import Navigation from "../aula04/Navigate";
 
 export default function App() {
   return (
-    <View style={styles.container}>
       <Navigation/>
-      <StatusBar style="auto" />
-    </View>
   );
 }
 

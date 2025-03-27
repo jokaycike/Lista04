@@ -1,11 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { TouchableOpacity } from 'react-native-web';
 
-export default function Pagina1() {
+export default function Pagina1({navigation}) {
   return (
-    <View style={styles.container}>
+    <View>
       <Text>Estou na pagina 1</Text>
-      <StatusBar style="auto" />
+      <TouchableOpacity 
+      onPress={() => navigation.navigate('Pagina2')}>
+        <Text>Navegar pag2</Text>
+      </TouchableOpacity>
     </View>
   );
 }
