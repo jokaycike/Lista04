@@ -1,14 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { TouchableOpacity } from 'react-native-web';
+import TabuleiroHM from '../components/TabuleiroHH';
 
-export default function Pagina1({navigation}) {
+export default function HomemVsHomem({navigation}) {
   return (
     <View>
-      <Text>Estou na pagina 1</Text>
+      <Text>Jogo Humano x Humano</Text>
+      <TabuleiroHM/>
       <TouchableOpacity 
-      onPress={() => navigation.navigate('Pagina2')}>
-        <Text>Navegar pag2</Text>
+      onPress={() => navigation.goBack()}>
+        <Text>Voltar</Text>
       </TouchableOpacity>
     </View>
   );
