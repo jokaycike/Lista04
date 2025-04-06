@@ -6,11 +6,11 @@ import TabuleiroHM from '../components/TabuleiroHH';
 export default function HomemVsHomem({navigation}) {
   return (
     <View>
-      <Text>Jogo Humano x Humano</Text>
+      <Text style={styles.title}>Jogo Humano x Humano</Text>
       <TabuleiroHM/>
-      <TouchableOpacity 
+      <TouchableOpacity style={styles.buttonBack}
       onPress={() => navigation.goBack()}>
-        <Text>Voltar</Text>
+        <Text style={styles.buttonText}>Voltar</Text>
       </TouchableOpacity>
     </View>
   );
@@ -22,5 +22,21 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  title: {
+    fontSize: 24,
+    marginBottom: 20,
+  },
+  buttonBack: {
+    backgroundColor: '#6c757d',
+    padding: 10,
+    borderRadius: 5,
+    alignItems: 'center',
+    width: '20%',
+    marginTop: 20,
+  },
+  buttonText: {
+      color: '#fff',
+      fontSize: 16,
   },
 });
